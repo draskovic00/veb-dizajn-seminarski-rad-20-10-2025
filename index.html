@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vaša kuhinja - ukusni domaći recepti, saveti za kuvanje i zdrava ishrana."
+    />
+    <meta
+      name="keywords"
+      content="recepti, kuhinja, zdrava ishrana, kolači, salate, glavna jela, deserti"
+    />
+
+    <title>Vaša kuhinja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- /*************** HERO ****************************/
+  /*************************************************/ -->
+    <!-- Header Section with Navigation -->
+    <header class="zaglavlje-sekcija">
+      <nav class="kontejner-nav">
+        <div>
+          <a href="#hero">
+            <img src="pribor.png" alt="pribor" class="ikonica" />
+          </a>
+        </div>
+
+        <!-- Hamburger ikona -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <!-- ********************************************** -->
+
+        <div class="navigacija">
+          <a href="#trending" class="dugme-nav">TRENDING</a>
+          <a href="#blog" class="dugme-nav">BLOG</a>
+          <!-- Mega meni -->
+          <div class="nav-predmet">
+            <a href="recepti.html" class="dugme-nav">RECEPTI</a>
+            <div class="mega-meni">
+              <div class="kontent">
+                <div class="red">
+                  <a href="recepti.html" class="dugme-nav">Salate</a>
+                  <ul class="mega-links">
+                    <a href="recepti.html" class="dugme-nav">Leto</a>
+                    <a href="recepti.html" class="dugme-nav">Zima</a>
+                    <a href="recepti.html" class="dugme-nav">Riba</a>
+                  </ul>
+                </div>
+                <div class="red">
+                  <a href="recepti.html" class="dugme-nav">Dezerti</a>
+                  <ul class="mega-links">
+                    <a href="recepti.html" class="dugme-nav">Palacinke</a>
+                    <a href="recepti.html" class="dugme-nav">Mafini</a>
+                    <a href="recepti.html" class="dugme-nav">Torte</a>
+                  </ul>
+                </div>
+                <div class="red">
+                  <a href="recepti.html" class="dugme-nav">Glavna jela</a>
+                  <ul class="mega-links">
+                    <a href="recepti.html" class="dugme-nav">Piletina</a>
+                    <a href="recepti.html" class="dugme-nav">Svinjetina</a>
+                    <a href="recepti.html" class="dugme-nav">Gulaš</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ============ -->
+          <a href="#recenzije" class="dugme-nav">RECENZIJE</a>
+          <a href="oNama.html" class="dugme-nav">O NAMA</a>
+          <a href="kontakt.html" class="dugme-nav uloguj-se">KONTAKT</a>
+          <div>
+            <button class="tamnimod-svetlimod">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#333"
+              >
+                <path
+                  d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#333"
+              >
+                <path
+                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="navigacijaZaMobilni">
+          <a href="#trending" class="dugme-nav">TRENDING</a>
+          <a href="#blog" class="dugme-nav">BLOG</a>
+          <a href="#recenzije" class="dugme-nav">RECENZIJE</a>
+          <a href="recepti.html" class="dugme-nav">RECEPTI</a>
+          <a href="oNama.html" class="dugme-nav">O NAMA</a>
+          <a href="kontakt.html" class="dugme-nav uloguj-se">KONTAKT</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-sekcija" id="hero">
+      <div class="hero">
+        <div class="header-kontejner-unutrasnji">
+          <h1>
+            Dobrodošli na Vašu Kuhinju - mesto gde jednostavni sastojci postaju
+            magični obroci!
+          </h1>
+          <a href="recepti.html" class="dugme">Pronadjite recepte</a>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section -->
+    <main class="main">
+      <!-- /*************** TRENDING slajd************************/
+      /*************************************************/ -->
+      <div id="kolacic-kutija">
+        <p>Da li voliš kolačiće? 🍪</p>
+        <button onclick="prihvatiKolacic()">DA</button>
+      </div>
+      <div class="recepti">
+        <div class="recepti-kontejner">
+          <div
+            class="slajd aktivan"
+            style="background-image: url('SARMA.png')"
+            ;
+          ></div>
+          <div
+            class="slajd"
+            style="background-image: url('Cevapi.jpg')"
+            ;
+          ></div>
+          <div
+            class="slajd"
+            style="background-image: url('Punjena\ paprika.jpeg')"
+            ;
+          ></div>
+          <div
+            class="slajd"
+            style="background-image: url('Gibanica.jpg')"
+            ;
+          ></div>
+        </div>
+        <button class="strelica levo-strelica" id="levo">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="strelica desno-strelica" id="desno">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- /*************** TRENDING ************************/
+      /*************************************************/ -->
+      <section class="trending-ukusi" id="trending">
+        <div class="kontejner trending-kontejner">
+          <div class="Otkrijte-ukuse-slike">
+            <h2 class="h2">Otrkijte ukuse</h2>
+            <ul class="recepti-trending grid--2-kolone">
+              <a class="recepti-link" href="recepti.html#lazanja">
+                <li class="recepti-trending-karta recepit-karta">
+                  <img
+                    src="SARMA.png"
+                    alt="Sarma"
+                    class="recepti-trending-kartica-medija"
+                  />
+                  <div class="recepti-kartica-telo">
+                    <h5 class="recepti-card-naslov">Sarma</h5>
+                  </div>
+                </li>
+              </a>
+
+              <a class="recepti-link" href="recepti.html#pizza">
+                <li class="recepti-trending-karta">
+                  <img
+                    src="Cevapi.jpg"
+                    class="recepti-trending-kartica-medija"
+                  />
+                  <div class="recepti-kartica-telo">
+                    <h5 class="recepti-card-naslov">Cevapi</h5>
+                  </div>
+                </li>
+              </a>
+              <a class="recepti-link" href="recepti.html#jastog">
+                <li class="recepti-trending-karta">
+                  <img
+                    src="Punjena paprika.jpeg"
+                    class="recepti-trending-kartica-medija"
+                  />
+                  <div class="recepti-kartica-telo">
+                    <h5 class="recepti-card-naslov">Punjena paprika</h5>
+                  </div>
+                </li>
+              </a>
+
+              <a class="recepti-link" href="recepti.html#losos">
+                <li class="recepti-trending-karta">
+                  <img
+                    src="Gibanica.jpg"
+                    class="recepti-trending-kartica-medija"
+                  />
+                  <div class="recepti-kartica-telo">
+                    <h5 class="recepti-card-naslov">Gibanica</h5>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- /*************** BLOG ****************************/
+      /*************************************************/ -->
+
+      <section class="blog" id="blog">
+        <div class="kontejner">
+          <h2 class="h2">Blog</h2>
+          <div class="kontejner-blog">
+            <a href="#" class="blog-nav">
+              <strong>Saveti za uštedu vremena u kuhinji:</strong> Naučite kako
+              da kuvate brže i efikasnije.
+            </a>
+            <a href="#" class="blog-nav">
+              <strong>Zdrava ishrana:</strong> Otkrijte kako da jedete ukusno i
+              zdravo.
+            </a>
+            <a href="#" class="blog-nav">
+              <strong>Sezonski sastojci:</strong> Kako najbolje iskoristiti
+              svežinu sezonskih namirnica.
+            </a>
+          </div>
+        </div>
+
+        <div class="kontejner-blog-pasusi">
+          <img src="gallery-5.jpg" alt="Zena kuva" class="blog-slika" />
+          <div>
+            <h3 class="h3">1. Tajne uspešnog pečenja kolača:</h3>
+            <p class="blog-pasus">
+              Naučićete kako da vaši kolači budu mekani iznutra i savršeno
+              pečeni spolja. Rešite uobičajene probleme poput pucanja kore ili
+              nejednakog pečenja.
+            </p>
+          </div>
+          <div>
+            <h3 class="h3">2. Kako planirati obroke za celu nedelju:</h3>
+            <p class="blog-pasus">
+              Otkrijte kako unapred pripremiti osnovne elemente jela i izbeći
+              stres tokom nedelje. Naučite kreativne načine za korišćenje
+              ostataka hrane.
+            </p>
+          </div>
+          <img
+            src="gallery-10.jpg"
+            class="blog-slika"
+            alt="covek sa istetoviranim rukama sprema nesto"
+          />
+
+          <img src="gallery-4.jpg" alt="slika voca" class="blog-slika" />
+          <div>
+            <h3 class="h3">3. Zdravi zalogaji za decu:</h3>
+            <p class="blog-pasus">
+              Pronaći ćete ideje za mini sendviče, voćne smoothieje i domaće
+              poslastice. Svi recepti su jednostavni za pripremu i bogati
+              hranljivim materijama.
+            </p>
+          </div>
+        </div>
+
+        <div class="checkbox-sekcija kontejner">
+          <h3 class="h3">Izaberite teme koje vas zanimaju:</h3>
+          <form id="checkboxForm">
+            <div class="label">
+              <label>
+                <input type="checkbox" name="blogTopics" value="brzaPriprema" />
+                Saveti za uštedu vremena
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="blogTopics"
+                  value="zdravaIshrana"
+                />
+                Zdrava ishrana
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="blogTopics"
+                  value="sezonskiSastojci"
+                />
+                Sezonski sastojci
+              </label>
+            </div>
+            <br />
+            <button type="button" class="dugme" id="checkboxdugme">
+              Prikaži odabrane teme
+            </button>
+          </form>
+          <p class="checkboxPoruka" id="checkboxPoruka"></p>
+        </div>
+      </section>
+
+      <!-- /*************** RECENZIJE SEKCIJA **************************/
+      /*****************************************************************/ -->
+
+      <section class="recenzije-sekcija" id="recenzije">
+        <div class="recenzije-kontejner">
+          <h2 class="h2">Recenzije</h2>
+          <div class="recenzije">
+            <figure class="recenzija">
+              <img class="recenzija-img" alt="slika musterije" src="dave.jpg" />
+              <blockquote class="recenzija-text">
+                Recepti su jednostavni i uvek uspeju! Idealno za brze večere.
+              </blockquote>
+              <p class="recenzija-ime">&mdash; Paja Panković</p>
+            </figure>
+
+            <figure class="recenzija">
+              <img class="recenzija-img" alt="slika musterije" src="ben.jpg" />
+              <blockquote class="recenzija-text">
+                Sajt je savršen za početnike. Uspeo sam da iznenadim porodicu
+                ukusnim jelima.
+              </blockquote>
+              <p class="recenzija-ime">&mdash; Marko Marković</p>
+            </figure>
+
+            <figure class="recenzija">
+              <img
+                class="recenzija-img"
+                alt="slika musterije"
+                src="customer-1.jpg"
+              />
+              <blockquote class="recenzija-text">
+                Blogovi su odlični! Naučila sam mnogo korisnih trikova za
+                pečenje kolača.
+              </blockquote>
+              <p class="recenzija-ime">&mdash; Dajana Branković</p>
+            </figure>
+
+            <figure class="recenzija">
+              <img
+                class="recenzija-img"
+                alt="slika musterije"
+                src="customer-3.jpg"
+              />
+              <blockquote class="recenzija-text">
+                Odlična kombinacija tradicionalnih i modernih recepata. Lava
+                kolač je hit kod nas!
+              </blockquote>
+              <p class="recenzija-ime">&mdash; Ivana Špic</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="galerija">
+          <figure class="galerija-predmet">
+            <img src="gallery-1.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-2.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-3.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-4.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-5.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-6.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-7.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-8.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-9.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-10.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-11.jpg" alt="slika hrane" />
+          </figure>
+          <figure class="galerija-predmet">
+            <img src="gallery-12.jpg" alt="slika hrane" />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- /*************** FOOTER SEKCIJA ******************/
+    /*************************************************/ -->
+
+    <footer class="footer" id="kontakt">
+      <div class="kontejner">
+        <div class="footer-kontejner grid grid--footer">
+          <div class="footer-logo-kolona">
+            <a href="#" class="footer-logo">
+              <img src="pribor.png" alt="recepti logo" class="ikonica" />
+              Vaša kuhinja
+            </a>
+
+            <ul class="social-media">
+              <li>
+                <a href="#"
+                  ><img src="logo-instagram.svg" width="25px" height="25px"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="logo-facebook.svg" width="25px" height="25px"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="logo-twitch.svg" width="25px" height="25px"
+                /></a>
+              </li>
+            </ul>
+
+            <p class="copydesno">
+              Copydesno &copy; 2027 by Vaša kuhinja. <br />
+              All desnos reserved.
+            </p>
+          </div>
+
+          <div class="kontakt-kolona">
+            <p class="footer-zaglavlje">Kontaktirajte nas</p>
+            <div class="praznina"></div>
+
+            <address class="kontakti">
+              <p class="adresa">Miletićeva 114, Zrenjanin, Srbija</p>
+              <p>
+                <a class="footer-link" href="tel:0690785156">069/0785156</a
+                ><br />
+                <a class="footer-link" href="draskovicbogdan002@gmail.com"
+                  >draskovicbogdan002@gmail.com</a
+                >
+              </p>
+            </address>
+          </div>
+
+          <nav class="nav-kolona">
+            <p class="footer-zaglavlje">Profil</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Napravite profil</a></li>
+              <li><a class="footer-link" href="#">Ulogujte se</a></li>
+              <li><a class="footer-link" href="#">iOS app</a></li>
+              <li><a class="footer-link" href="#">Android app</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-kolona">
+            <p class="footer-zaglavlje">Kompanija</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">O nama</a></li>
+              <li><a class="footer-link" href="#">Za biznis</a></li>
+              <li><a class="footer-link" href="#">Partneri</a></li>
+              <li><a class="footer-link" href="#">Karijera</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-kolona">
+            <p class="footer-zaglavlje">Resursi</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Direktorijum recepata</a></li>
+              <li><a class="footer-link" href="#">Pomoć</a></li>
+              <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script defer src="scripts.js"></script>
+  </body>
+</html>
